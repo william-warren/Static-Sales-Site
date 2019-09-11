@@ -1,0 +1,100 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    font-size: 12pt;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(https://gatherer.wizards.com/Images/background/Gray_Patterned_BG.jpg);
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+
+}
+
+header {
+    width: 85%;
+    min-height: 3.5rem;
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: co;
+    justify-content: center;
+    font-size: 15pt;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+header > p {
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    justify-content: space-evenly;
+    margin: 0;
+}
+
+.color-container {
+    border: 1px solid black;
+    height: 17rem;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.color {
+    height: 2.5rem;
+    border: 1px solid black;
+    margin: 0;
+    background-color: rgba(0, 0, 0, .5)
+}
+
+.color > p {
+    padding: .75rem 1.5rem;
+    margin: 0;
+}
+
+.decks {
+    height: 12.5rem;
+    width: 100%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: .5rem;
+    padding-top: .5rem;
+}
+
+.deck-container {
+    width: 20rem;
+    height: 12rem;
+    transition: .8s;
+    display: flex;
+}
+
+.deck-container:hover {
+    background-color: rgba(0, 0, 0, .5);
+    cursor: pointer;
+}
+
+.deck-image {
+    height: 192px;
+    width: 138px;
+    border-radius: 9px;
+    overflow: hidden;
+    margin-right: 1rem;
+    transition: .5s;
+
+}
+
+.deck-desc {
+    text-align: center;
+}
+
+.price {
+    color: coral;
+}
+/* .deck-image:hover {
+    transform: scale(1.5);
+} */
