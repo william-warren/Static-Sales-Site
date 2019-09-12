@@ -33,6 +33,10 @@ main {
     margin: 0;
 }
 
+.icon {
+    border-radius: 50%;
+}
+
 .color-container {
     border: 1px solid black;
     height: 17rem;
