@@ -23,9 +23,22 @@ header {
     font-size: 13pt;
 }
 
-header > div > ul > li {
-    margin: .5rem;
-    list-style: none;
+header > div > h1 {
+    color: coral;
+    margin: 1rem 0rem;
+    font-family: 'Knewave', cursive;
+}
+
+h2 {
+    margin: 0;
+    text-align: center;
+    padding: .5rem;
+    color: coral;
+    font-family: 'Knewave', cursive;
+}
+
+header > div > p {
+    font-size: 14pt;
 }
 
 main {
@@ -57,6 +70,27 @@ a {
     cursor: pointer;
 }
 
+#format-descriptions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    width: 45rem;
+    margin: 0rem 1rem;
+}
+
+#format-desc-title {
+    width: 45rem;
+}
+
+#descriptions {
+    display: flex;
+}
+
+#aboutdiv > p {
+    margin-bottom: 1rem;
+}
+
 .idek {
     background-color: rgba(0, 0, 0, .5);
     display: flex;
@@ -66,6 +100,7 @@ a {
     padding: 1rem; 
     width: 26rem;  
     text-align: center;
+    font-size: 18pt;
 }
 
 .idek > p {
@@ -74,6 +109,8 @@ a {
 
 .dark-bg {
     background-color: rgba(0, 0, 0, .5);
+    font-family: 'Knewave', cursive;
+    color: coral;
 }
 
 .format {
@@ -81,6 +118,7 @@ a {
     height: 13rem;
     /* border: 1px solid black; */
     text-align: center;
+    margin: 0rem 1rem;
 
 }
 
@@ -88,14 +126,14 @@ a {
     height: 12rem;
     width: 12rem;
     /* border: 1px solid black; */
-    transition: ease-in 50ms;
+    transition: linear .75s;
     display: flex;
     flex-direction: column;
     padding: 0;
 }
 
 .format-card:hover {
-    transform: scale(1.9);
+    transform: scale(1.6);
     margin: 0rem 5rem;
 }
 

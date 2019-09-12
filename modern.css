@@ -26,7 +26,7 @@ header {
 }
 
 header > p {
-    margin: 0;
+    margin: .25rem;
 }
 
 main {
@@ -52,11 +52,13 @@ main {
     height: 2.5rem;
     /* border: 1px solid black; */
     margin: 0;
-    background-color: rgba(0, 0, 0, .5)
+    background-color: rgba(0, 0, 0, .5);
+    color: coral;
+    font-family: 'Knewave', cursive;
 }
 
 .color > p {
-    padding: .75rem 1.5rem;
+    padding: .5rem 1.5rem;
     margin: 0;
 }
 
@@ -85,8 +87,8 @@ main {
 .deck-image {
     height: 192px;
     width: 138px;
-    /* border-radius: 9px; */
-    overflow: hidden;
+    border-radius: 6px;
+    /* overflow: hidden; */
     margin-right: 1rem;
     transition: .5s;
 
@@ -98,6 +100,8 @@ main {
 
 .price {
     color: coral;
+    font-family: 'Knewave', cursive;
+
 }
 /* .deck-image:hover {
     transform: scale(1.5);

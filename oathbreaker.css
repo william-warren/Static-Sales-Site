@@ -14,15 +14,19 @@ body {
 
 header {
     width: 85%;
-    height: 2rem;
+    height: 5rem;
     margin: 1rem;
-    border: 1px solid black;
     padding: 1rem;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     font-size: 15pt;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+header > p {
+    margin: .25rem;
 }
 
 main {
@@ -38,7 +42,7 @@ main {
 }
 
 .color-container {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     height: 17rem;
     width: 100%;
     margin-top: 2rem;
@@ -46,27 +50,59 @@ main {
 
 .color {
     height: 2.5rem;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     margin: 0;
+    background-color: rgba(0, 0, 0, .5);
+    color: coral;
+    font-family: 'Knewave', cursive;
 }
 
 .color > p {
-    padding: .75rem 1.5rem;
+    padding: .5rem 1.5rem;
     margin: 0;
 }
 
 .decks {
     height: 12.5rem;
     width: 100%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: flex;
     justify-content: space-evenly;
-    margin: .5rem 0rem;
-    padding: .5rem 0rem;
+    margin-top: .5rem;
+    padding-top: .5rem;
 }
 
 .deck-container {
     width: 20rem;
     height: 12rem;
-    border: 1px solid black;
+    transition: .8s;
+    display: flex;
 }
+
+.deck-container:hover {
+    background-color: rgba(0, 0, 0, .5);
+    cursor: pointer;
+}
+
+.deck-image {
+    height: 192px;
+    width: 138px;
+    border-radius: 6px;
+    /* overflow: hidden; */
+    margin-right: 1rem;
+    transition: .5s;
+
+}
+
+.deck-desc {
+    text-align: center;
+}
+
+.price {
+    color: coral;
+    font-family: 'Knewave', cursive;
+
+}
+/* .deck-image:hover {
+    transform: scale(1.5);
+} */
