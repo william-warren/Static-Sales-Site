@@ -77,11 +77,40 @@ main {
     height: 12rem;
     transition: .8s;
     display: flex;
+    overflow: hidden;
+    position: relative;
+    padding: 0;
 }
 
 .deck-container:hover {
-    background-color: rgba(0, 0, 0, .5);
     cursor: pointer;
+}
+
+.deck-container:hover .deck-tip {
+    display: flex;
+    position: absolute;
+    width: 20rem;
+    height: 12rem;
+    background-color: rgba(0, 0, 0, .9);
+    top: 0%;
+    align-items: center;
+}
+
+.deck-tip {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    transition: ease .8s;
+    top: 100%;
+    width: 20rem;
+    height: 12rem;
+}
+
+.deck-tip > p {
+    font-size: 10pt;
+    text-align: center;
+    padding: 0;
+    margin: 1rem;
 }
 
 .deck-image {
