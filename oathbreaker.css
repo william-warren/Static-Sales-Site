@@ -74,7 +74,7 @@ main {
 
 .deck-container {
     width: 20rem;
-    height: 12rem;
+    height: 14rem;
     transition: .8s;
     display: flex;
     overflow: hidden;
@@ -90,7 +90,7 @@ main {
     display: flex;
     position: absolute;
     width: 20rem;
-    height: 12rem;
+    height: 14rem;
     background-color: rgba(0, 0, 0, .9);
     top: 0%;
     align-items: center;
@@ -103,7 +103,7 @@ main {
     transition: ease .8s;
     top: 100%;
     width: 20rem;
-    height: 12rem;
+    height: 14rem;
 }
 
 .deck-tip > p {
@@ -114,16 +114,18 @@ main {
 }
 
 .deck-image {
-    height: 192px;
+    height: 224px;
     width: 138px;
     border-radius: 6px;
     /* overflow: hidden; */
     margin-right: 1rem;
     transition: .5s;
+    display: flex;
+    align-items: center;
 
 }
 
-.deck-desc {
+.deck-desc > p {
     text-align: center;
 }
 
