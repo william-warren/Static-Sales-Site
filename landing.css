@@ -132,6 +132,10 @@ a {
     padding: 0;
 }
 
+.format-card > a {
+    transition: 0s;
+}
+
 .format-card:hover {
     transform: scale(1.6);
     margin: 0rem 5rem;
