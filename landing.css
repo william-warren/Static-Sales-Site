@@ -134,7 +134,7 @@ a {
 }
 
 .format-card > a {
-    transition: 0s;
+    transition: 0s !important;
 }
 
 .format-card:hover {
