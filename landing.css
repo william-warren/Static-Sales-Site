@@ -192,7 +192,7 @@ a {
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        margin-top: 50rem;
+        margin-top: 54rem;
         max-height: none;
     }
 
@@ -227,5 +227,9 @@ a {
 
     .format-card {
         margin: 1.5rem;
+    }
+    
+    .format-card:hover {
+        transform: none;
     }
 }
