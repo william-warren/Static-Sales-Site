@@ -1,5 +1,5 @@
 body {
-    height: 100vh;
+    /* height: 100vh; */
     width: 100vw;
     font-size: 12pt;
     margin: 0;
@@ -14,7 +14,7 @@ body {
 
 header {
     width: 85%;
-    height: 5rem;
+    max-height: 5rem;
     margin: 1rem;
     padding: 1rem;
     text-align: center;
@@ -43,7 +43,7 @@ main {
 
 .color-container {
     /* border: 1px solid black; */
-    height: 17rem;
+    max-height: 17rem;
     width: 100%;
     margin-top: 2rem;
 }
@@ -63,7 +63,7 @@ main {
 }
 
 .decks {
-    height: 12.5rem;
+    max-height: 12.5rem;
     width: 100%;
     /* border: 1px solid black; */
     display: flex;
@@ -132,6 +132,22 @@ main {
     font-family: 'Knewave', cursive;
 
 }
-/* .deck-image:hover {
-    transform: scale(1.5);
-} */
+
+@media screen and (max-width: 414px) {
+    header {
+        max-height: none;
+    }
+    
+    .decks {
+        flex-direction: column;
+        max-height: none;
+    }
+
+    .deck-container {
+        margin-top: 1rem;
+    }
+
+    .color-container {
+        max-height: none;
+    }
+}

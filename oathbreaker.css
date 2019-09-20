@@ -1,5 +1,5 @@
 body {
-    height: 100vh;
+    /* height: 100vh; */
     width: 100vw;
     font-size: 12pt;
     margin: 0;
@@ -14,7 +14,7 @@ body {
 
 header {
     width: 85%;
-    height: 5rem;
+    max-height: 5rem;
     margin: 1rem;
     padding: 1rem;
     text-align: center;
@@ -43,7 +43,7 @@ main {
 
 .color-container {
     /* border: 1px solid black; */
-    height: 17rem;
+    max-height: 17rem;
     width: 100%;
     margin-top: 2rem;
 }
@@ -63,7 +63,7 @@ main {
 }
 
 .decks {
-    height: 12.5rem;
+    max-height: 12.5rem;
     width: 100%;
     /* border: 1px solid black; */
     display: flex;
@@ -74,7 +74,7 @@ main {
 
 .deck-container {
     width: 20rem;
-    height: 14rem;
+    height: 12rem;
     transition: .8s;
     display: flex;
     overflow: hidden;
@@ -90,7 +90,7 @@ main {
     display: flex;
     position: absolute;
     width: 20rem;
-    height: 14rem;
+    height: 12rem;
     background-color: rgba(0, 0, 0, .9);
     top: 0%;
     align-items: center;
@@ -103,7 +103,7 @@ main {
     transition: ease .8s;
     top: 100%;
     width: 20rem;
-    height: 14rem;
+    height: 12rem;
 }
 
 .deck-tip > p {
@@ -114,18 +114,16 @@ main {
 }
 
 .deck-image {
-    height: 224px;
+    height: 192px;
     width: 138px;
     border-radius: 6px;
     /* overflow: hidden; */
     margin-right: 1rem;
     transition: .5s;
-    display: flex;
-    align-items: center;
 
 }
 
-.deck-desc > p {
+.deck-desc {
     text-align: center;
 }
 
@@ -134,6 +132,22 @@ main {
     font-family: 'Knewave', cursive;
 
 }
-/* .deck-image:hover {
-    transform: scale(1.5);
-} */
+
+@media screen and (max-width: 414px) {
+    header {
+        max-height: none;
+    }
+    
+    .decks {
+        flex-direction: column;
+        max-height: none;
+    }
+
+    .deck-container {
+        margin-top: 1rem;
+    }
+
+    .color-container {
+        max-height: none;
+    }
+}
