@@ -112,7 +112,7 @@ a {
 
 .format {
     width: 13rem;
-    height: 13rem;
+    max-height: 13rem;
     /* border: 1px solid black; */
     text-align: center;
     margin: 0rem 1rem;
@@ -194,12 +194,13 @@ a {
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        margin-top: 54rem;
+        margin-top: 60rem;
         max-height: none;
     }
 
     .format {
         margin: 1rem;
+        max-height: none;
     }
 
     .format > p {

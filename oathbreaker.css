@@ -45,7 +45,7 @@ main {
     /* border: 1px solid black; */
     max-height: 17rem;
     width: 100%;
-    margin-top: 2rem;
+    margin: 1rem 0rem;
 }
 
 .color {
@@ -125,6 +125,7 @@ main {
 
 .deck-desc {
     text-align: center;
+    width: 182px;
 }
 
 .price {
